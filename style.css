@@ -45,7 +45,7 @@ h1 {
 .main-image img {
   max-width: 100%;
   margin: 2rem 0;
-  width: 40rem;
+  width: 60rem;
 }
 
 .output {
@@ -93,11 +93,11 @@ input {
 }
 
 #funny-section img {
-  width: 25rem;
+  width: 38rem;
 }
 
 #hard-section img {
-  width: 35rem;
+  width: 50rem;
 }
 
 .section:active {
