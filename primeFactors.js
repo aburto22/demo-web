@@ -32,5 +32,3 @@ function findPrimeFactors(number) {
 
   return primeFactors;
 }
-
-//module.exports = findPrimeFactors;

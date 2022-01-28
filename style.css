@@ -1,0 +1,105 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #EFEFEB;
+  color: rgb(39, 39, 39);
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.app {
+  display: none;
+  margin-top: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  margin: 2rem 0;
+  width: 40rem;
+}
+
+.output {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-right: 1rem;
+  width: 20rem;
+}
+
+.snippet {
+  max-width: 100%;
+  width: 70%;
+}
+
+#app-roman img {
+  width: 100%;
+}
+#app-prime-factors img {
+  width: 40rem;
+}
+
+.snippet-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+#funny-section img {
+  width: 25rem;
+}
+
+#hard-section img {
+  width: 35rem;
+}
+
+.section:active {
+  background-color: white;
+}
