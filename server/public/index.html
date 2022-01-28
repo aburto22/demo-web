@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <title>Demo Coding-Nomads</title>
+</head>
+<body>
+
+  <style>
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 60px;
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+
+    input {
+      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+      inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+      background: linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(255, 255, 255, 0.3)
+      ß);
+      border: none;
+      border-radius: 10px;
+      height: 40px;
+      width: 300px;
+      margin: 10px 30px;
+    }
+    a {
+    text-decoration: none;
+    color: #5ab9ea;
+    }
+    .back-btn {
+      color: white;
+    }
+    .column {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+  </style>
+  <div class="container">
+    <h1>WEB DEMO CODING-NOMADS</h1>
+    <div class="app" id="app-roman">
+      <h2>Convert from roman numbers to arabics</h2>
+      <input type="text" placeholder="e.g. XXXIV">
+      <button class="btn btn-info">get result</button>
+      <button class="btn btn-outline-info"><a href="/coding-nomads/code">CODE</a></button>
+      <div class="output"></div>
+    </div>
+    <div class="app" id="app-prime-factors">
+      <h2>Find the prime factors of your number</h2>
+      <input type="number" placeholder="Please provide a number">
+      <button class="btn btn-info">get result</button>
+      <button class="btn btn-outline-info">CODE</button>
+      <div class="output"></div>
+    </div>
+    <div class="container-columns">
+      <div class="row">
+        <div class="column col-6" id="fun">
+          <h2>The most funny</h2>
+          <p>most funny thing</p>
+        </div>
+        <div class="column col-6" id="hard">
+          <h2>The hardest</h2>
+          <p>hardest thing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='/server/primeFactors.js'></script>
+  <script src='/server/romanToNum.js'></script>
+  <script src='/index.js'></script>
+
+</body>
+</html>

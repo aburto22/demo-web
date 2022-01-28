@@ -1,11 +1,24 @@
-document.querySelector('#app-roman button').addEventListener('click', () => {
-  const romanInput = document.querySelector('#app-roman input').value;
-  const romanOutput = romanToNum(romanInput);
-  document.querySelector('#app-roman .output').innerHTML = `<p>${romanOutput}</p>`;
-})
+var http = require('http'); 
+const fs = require('fs');
 
-document.querySelector('#app-prime-factors button').addEventListener('click', () => {
-    const primeInput = document.querySelector('#app-prime-factors input').value;
-    const primeOutput = findPrimeFactors(Number(primeInput));
-    document.querySelector('#app-prime-factors .output').innerHTML = `<p>${primeOutput}</p>`;
-  })
+const homePage = fs.readFileSync('./server/public/index.html');
+const codePage = fs.readFileSync('./server/public/code.html');
+
+var server = http.createServer(function (req, res) {  
+  if (req.url == '/coding-nomads') { 
+    res.writeHead(200, { 'Content-Type': 'text/html' }); 
+    res.end(homePage);
+  }  
+  if (req.url == '/coding-nomads/code') { 
+    res.writeHead(200, { 'Content-Type': 'text/html' }); 
+    res.end(codePage);
+  } else {
+  res.end('Invalid Request!');
+  }
+});
+
+
+
+server.listen(3000); 
+
+console.log('Node.js web server at port 3000 is running..')
