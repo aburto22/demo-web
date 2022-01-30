@@ -14,7 +14,7 @@ function romanToHundreds(roman) {
 }
 
 function romanToThousands(roman) {
-  const romanThousands = [undefined, 'M', 'MM', 'MMM']
+  const romanThousands = [undefined, 'M', 'MM', 'MMM'];
   return romanThousands.indexOf(roman).toString();
 }
 
@@ -45,3 +45,5 @@ function romanToNum(roman) {
 
   return Number(result);
 }
+
+module.exports = romanToNum;

@@ -1,13 +1,13 @@
 function isPrime(number) {
   return [...Array(number).keys()]
-    .filter(digits => digits > 1)
-    .every(digit => number % digit !== 0);
+    .filter((digits) => digits > 1)
+    .every((digit) => number % digit !== 0);
 }
 
 function getFirstPrimeFactor(num) {
   return [...Array(num + 1).keys()]
-    .filter(digits => digits > 1)
-    .find(prime => isPrime(prime) && num % prime === 0);
+    .filter((digits) => digits > 1)
+    .find((prime) => isPrime(prime) && num % prime === 0);
 }
 
 function findPrimeFactors(number) {
@@ -32,3 +32,5 @@ function findPrimeFactors(number) {
 
   return primeFactors;
 }
+
+module.exports = findPrimeFactors;
